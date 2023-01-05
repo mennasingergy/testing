@@ -1,0 +1,18 @@
+jest.mock("axios");
+const axios = require('axios');
+const reservationService2 = require('./reservation.service');
+const mockReservationApiStub = require('./reservation.api.stub.json');
+
+beforeEach(() => {
+    jest.clearAllMocks();
+    jest.resetAllMocks();
+});
+
+describe('Reservation API', () => {
+    test('Reservation', async () => {
+        axios.get.mockResolvedValueOnce(mockReservationApiStub);
+        const ticket = { id: 'd86d3b54-fdc1-414d-96dd-d3dfd33fc74c' };
+        const results = await reservationService2.getReservedTickets(ticket);
+        expect(results).toEqual(mockReservationApiStub.data);
+    });
+});

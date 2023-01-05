@@ -1,0 +1,12 @@
+{
+    "data":{
+    "message": "Ticket Purchase Successful",
+    "id": "332e67df-3a73-4586-b93c-3cdc1e60a17d",
+    "email": "reservation@gmail.com",
+    "matchNumber": 59,
+    "category": 1,
+    "quantity": 2,
+    "price": 75,
+    "_id": "63b59682e8c63744c419dbed"
+  }
+}

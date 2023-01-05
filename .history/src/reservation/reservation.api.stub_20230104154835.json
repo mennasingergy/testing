@@ -1,0 +1,17 @@
+{
+    "data":{
+        "email": "menna@gmail.com",
+        "matchNumber": 1,
+        "tickets": {
+          "category": 1,
+          "quantity": 2,
+          "price": 75
+        },
+        "card": {
+          "number": "4242424242424242",
+          "expirationMonth": 12,
+          "expirationYear": 2024,
+          "cvc": "123"   
+        }
+      }
+}
