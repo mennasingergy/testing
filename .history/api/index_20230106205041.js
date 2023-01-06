@@ -103,6 +103,7 @@ app.get("/api/reservation/:id", async (req, res) => {
   const db = await mongoClient();
   if (!db) res.status(500).send("Systems Unavailable");
   let id = req.params.id;
+
   const reservation = await db
     .collection("Reservation")
     .findOne({ id: id });

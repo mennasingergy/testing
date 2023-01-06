@@ -1,7 +1,5 @@
 const api = require('axios')
 const RESERVATION_API = ('https://reservation-new.vercel.app/api/reservation')
-const mockReservationApiStub2 = require('./reservation2.api.stub.json');
-
 
 
 async function getReservedTickets(id) {
@@ -10,8 +8,7 @@ async function getReservedTickets(id) {
         .catch((e) => null);
 }
 async function createNewReservation() {
-
-    return api.post(`${RESERVATION_API}`, mockReservationApiStub2).then(({ data }) => mockReservationApiStub2.data)
+    return api.post(`${RESERVATION_API}`, data).then(({ data }) => data)
         .catch((e) => null);
 }
 

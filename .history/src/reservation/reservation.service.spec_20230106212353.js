@@ -20,9 +20,9 @@ describe('Reservation API', () => {
         expect(results).toEqual(mockReservationApiStub.data);
     });
     test('Reservation post endpoint', async () => {
-        axios.post.mockResolvedValueOnce(mockReservationApiStub2);
+        axios.post.mockResolvedValueOnce(mockReservation2ApiStub);
         // const ticket = { id: '1a44ff66-a942-48f4-a9c1-77184c4469cb' };
-        const results = await reservationService2.createNewReservation();
+        const results = await reservationService.createNewReservation();
         expect(results).toEqual(mockReservationApiStub2.data);
     });
 
